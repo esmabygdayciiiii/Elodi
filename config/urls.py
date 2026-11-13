@@ -1,4 +1,4 @@
-from django.contrib import admin
+
 from django.urls import path, include
 from django.views.generic import TemplateView
 
@@ -7,7 +7,6 @@ urlpatterns = [
         template_name='users/tanitim.html'
     ), name='landing'),
 
-    path('admin/', admin.site.urls),
     path('dashboard/', include('dashboard.urls')),
 
     path('api/auth/', include('users.urls')),
